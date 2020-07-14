@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:4200/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>Hel</title>
+  <!--<base href="/">--><base href=".">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="http://localhost:4200/favicon.ico">
+<style>/* You can add global styles to this file, and also import other style files */
+body{
+    background-color: #000000;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlcy5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsOEVBQThFO0FBQzlFO0lBQ0kseUJBQXlCO0FBQzdCIiwiZmlsZSI6InN0eWxlcy5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIvKiBZb3UgY2FuIGFkZCBnbG9iYWwgc3R5bGVzIHRvIHRoaXMgZmlsZSwgYW5kIGFsc28gaW1wb3J0IG90aGVyIHN0eWxlIGZpbGVzICovXG5ib2R5e1xuICAgIGJhY2tncm91bmQtY29sb3I6ICMwMDAwMDA7XG59Il19 */</style><style>.logo[_ngcontent-iox-c40]{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input-text[_ngcontent-iox-c40]{
+    display: inline;
+    margin: 0;
+    border: none;
+    border-radius: 0.4rem;
+    padding: 10px;
+}
+
+.container[_ngcontent-iox-c40] {
+    color:#fff;
+    max-width: 500px;
+    margin: auto;
+}
+
+.list[_ngcontent-iox-c40]   ul[_ngcontent-iox-c40]   li[_ngcontent-iox-c40]{
+    color: #000000;
+    background-color: #ffffff;
+    line-height: 30px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #cccccc;
+    padding: 10px;
+    position: relative;
+    display: block;
+    width: 100%;
+    text-decoration: underline;
+}
+
+ul[_ngcontent-iox-c40] {
+    margin:0px;
+    padding: 0px;
+}
+
+.app-title[_ngcontent-iox-c40]{
+    text-align: center;
+    color: #7B8788;
+    font-size: 70px;
+}
+
+.add-btn[_ngcontent-iox-c40]{
+    color: #fff !important;
+    text-transform:uppercase;
+    text-decoration: none;
+    background: #7313cb;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 0.4rem;
+    display: inline-block;
+    border: none;
+}
+
+.list[_ngcontent-iox-c40]   ul[_ngcontent-iox-c40]   li[_ngcontent-iox-c40]   button[_ngcontent-iox-c40] {
+    position: absolute;
+    right: 0%;
+    background: #f34541;
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 0.4rem;
+    display: inline-block;
+    border: none;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxjQUFjO0lBQ2QsaUJBQWlCO0lBQ2pCLGtCQUFrQjtBQUN0Qjs7QUFFQTtJQUNJLGVBQWU7SUFDZixTQUFTO0lBQ1QsWUFBWTtJQUNaLHFCQUFxQjtJQUNyQixhQUFhO0FBQ2pCOztBQUVBO0lBQ0ksVUFBVTtJQUNWLGdCQUFnQjtJQUNoQixZQUFZO0FBQ2hCOztBQUVBO0lBQ0ksY0FBYztJQUNkLHlCQUF5QjtJQUN6QixpQkFBaUI7SUFDakIsMEJBQTBCO0lBQzFCLHdCQUF3QjtJQUN4Qiw0QkFBNEI7SUFDNUIsYUFBYTtJQUNiLGtCQUFrQjtJQUNsQixjQUFjO0lBQ2QsV0FBVztJQUNYLDBCQUEwQjtBQUM5Qjs7QUFFQTtJQUNJLFVBQVU7SUFDVixZQUFZO0FBQ2hCOztBQUNBO0lBQ0ksa0JBQWtCO0lBQ2xCLGNBQWM7SUFDZCxlQUFlO0FBQ25COztBQUVBO0lBQ0ksc0JBQXNCO0lBQ3RCLHdCQUF3QjtJQUN4QixxQkFBcUI7SUFDckIsbUJBQW1CO0lBQ25CLFlBQVk7SUFDWixhQUFhO0lBQ2IscUJBQXFCO0lBQ3JCLHFCQUFxQjtJQUNyQixZQUFZO0FBQ2hCOztBQUVBO0lBQ0ksa0JBQWtCO0lBQ2xCLFNBQVM7SUFDVCxtQkFBbUI7SUFDbkIsc0JBQXNCO0lBQ3RCLHlCQUF5QjtJQUN6QixxQkFBcUI7SUFDckIsaUJBQWlCO0lBQ2pCLGtCQUFrQjtJQUNsQixhQUFhO0lBQ2IscUJBQXFCO0lBQ3JCLHFCQUFxQjtJQUNyQixZQUFZO0FBQ2hCIiwiZmlsZSI6InNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIubG9nb3tcbiAgICBkaXNwbGF5OiBibG9jaztcbiAgICBtYXJnaW4tbGVmdDogYXV0bztcbiAgICBtYXJnaW4tcmlnaHQ6IGF1dG87XG59XG5cbi5pbnB1dC10ZXh0e1xuICAgIGRpc3BsYXk6IGlubGluZTtcbiAgICBtYXJnaW46IDA7XG4gICAgYm9yZGVyOiBub25lO1xuICAgIGJvcmRlci1yYWRpdXM6IDAuNHJlbTtcbiAgICBwYWRkaW5nOiAxMHB4O1xufVxuXG4uY29udGFpbmVyIHtcbiAgICBjb2xvcjojZmZmO1xuICAgIG1heC13aWR0aDogNTAwcHg7XG4gICAgbWFyZ2luOiBhdXRvO1xufVxuXG4ubGlzdCB1bCBsaXtcbiAgICBjb2xvcjogIzAwMDAwMDtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjZmZmZmZmO1xuICAgIGxpbmUtaGVpZ2h0OiAzMHB4O1xuICAgIGJvcmRlci1ib3R0b20tc3R5bGU6IHNvbGlkO1xuICAgIGJvcmRlci1ib3R0b20td2lkdGg6IDFweDtcbiAgICBib3JkZXItYm90dG9tLWNvbG9yOiAjY2NjY2NjO1xuICAgIHBhZGRpbmc6IDEwcHg7XG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgIGRpc3BsYXk6IGJsb2NrO1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIHRleHQtZGVjb3JhdGlvbjogdW5kZXJsaW5lO1xufVxuXG51bCB7XG4gICAgbWFyZ2luOjBweDtcbiAgICBwYWRkaW5nOiAwcHg7XG59XG4uYXBwLXRpdGxle1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICBjb2xvcjogIzdCODc4ODtcbiAgICBmb250LXNpemU6IDcwcHg7XG59XG5cbi5hZGQtYnRue1xuICAgIGNvbG9yOiAjZmZmICFpbXBvcnRhbnQ7XG4gICAgdGV4dC10cmFuc2Zvcm06dXBwZXJjYXNlO1xuICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbiAgICBiYWNrZ3JvdW5kOiAjNzMxM2NiO1xuICAgIG1hcmdpbjogMjBweDtcbiAgICBwYWRkaW5nOiAxMHB4O1xuICAgIGJvcmRlci1yYWRpdXM6IDAuNHJlbTtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gICAgYm9yZGVyOiBub25lO1xufVxuXG4ubGlzdCB1bCBsaSBidXR0b24ge1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICByaWdodDogMCU7XG4gICAgYmFja2dyb3VuZDogI2YzNDU0MTtcbiAgICBjb2xvcjogI2ZmZiAhaW1wb3J0YW50O1xuICAgIHRleHQtdHJhbnNmb3JtOiB1cHBlcmNhc2U7XG4gICAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xuICAgIG1hcmdpbi1sZWZ0OiAxMHB4O1xuICAgIG1hcmdpbi1yaWdodDogMTBweDtcbiAgICBwYWRkaW5nOiAxMHB4O1xuICAgIGJvcmRlci1yYWRpdXM6IDAuNHJlbTtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gICAgYm9yZGVyOiBub25lO1xufVxuIl19 */</style></head>
+<body>
+  <app-root _nghost-iox-c40="" ng-version="9.1.9"><div _ngcontent-iox-c40=""><img _ngcontent-iox-c40="" src="./Hel_files/logo.png" alt="BIRD" weight="100" height="100" class="logo"><h1 _ngcontent-iox-c40="" class="app-title"> BIRD</h1></div><div _ngcontent-iox-c40="" class="container">Update the Toto List <br _ngcontent-iox-c40=""><input _ngcontent-iox-c40="" type="text" name="todo" placeholder="Add New Task" class="input-text ng-valid ng-dirty ng-touched" ng-reflect-name="todo" ng-reflect-model=""><button _ngcontent-iox-c40="" class="add-btn">Add Todo</button><div _ngcontent-iox-c40="" class="list"><ul _ngcontent-iox-c40=""><li _ngcontent-iox-c40=""><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--><span _ngcontent-iox-c40=""><input _ngcontent-iox-c40="" type="text" size="65" name="isDone" style="border: 0; border-bottom: 1px solid black;" ng-reflect-name="isDone" ng-reflect-model="Task" class="ng-untouched ng-pristine ng-valid"></span><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><button _ngcontent-iox-c40="" class="btn">Delete</button></li><!--bindings={
+  "ng-reflect-ng-for-of": ""
+}--></ul></div></div></app-root>
+<script src="./Hel_files/runtime.js" type="module"></script><script src="./Hel_files/polyfills.js" type="module"></script><script src="./Hel_files/styles.js" type="module"></script><script src="./Hel_files/vendor.js" type="module"></script><script src="./Hel_files/main.js" type="module"></script>
+
+</body></html>
