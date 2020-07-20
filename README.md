@@ -1,27 +1,34 @@
-# Hel
+# Todo Application
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
+Todo Application is easier way to track the list to be done.
 
-## Development server
+Environment : 
+Frontend : Angular and Typescript.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+To run the application , Need to Start Node JS server and Run the Angular Server.
 
-## Code scaffolding
+# Docker : 
+Docker is mainly used to build and ship the application 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+To run the application in the Docker Deamon , need to Build the image using dockerfile .
 
-## Build
+Run the Image : docker run -p 4200:4200 <image-name>
+  
+  By giving the command : docker ps 
+         - it list the number of containers running.
+         
+# Kubernetes:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Kubernetes is used to scale ,manages the container and deployment to automate the container
 
-## Running unit tests
+Start "minkube start". 
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+First , Need to deploy the deploy.yaml.
 
-## Running end-to-end tests
+Check the list of deployments by : kubectl get deployments .
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Check the list of services by : kubecl get services .
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+To check the service in minikube :  minikube service <service-name> .
+  
+Check the Kubernetes Status : minikube status
